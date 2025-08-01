@@ -11,6 +11,7 @@ import Product_page6 from "./pages/Product_page6";
 import Home from "./pages/Home";
 import Checkout_2 from "./pages/Checkout_2";
 import Shopping_Cart from "./pages/Shopping_Cart";
+import Footer from "./components/homepage_components/Footer";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/Checkout_2" element={<Checkout_2 />} />
           <Route path="/Shopping_Cart" element={<Shopping_Cart />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
