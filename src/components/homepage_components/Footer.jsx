@@ -4,8 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#212121] px-[300px] py-[50px] text-white">
-      <div className="flex  items-center justify-between">
+    <footer className="bg-[#212121] lg:px-[50px] px-[25px] 2xl:px-[300px] py-[50px] text-white">
+      <div className="lg:flex  items-center justify-between">
         <div className="flex items-center gap-[30px]">
           <Link to={"/"}>Policy</Link>
           <Link to={"/"}>Terms & Services</Link>
@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <img src="/Component.png" alt="logo" />
         </div>
-        <div className="flex items-center gap-[30px]">
+        <div className="lg:flex items-center gap-[30px]">
           <p>Follow Us on Social</p>
           <div className="flex  text-[20px] gap-[15px] text-[#BBBBBB]">
             <i class="bx bxl-facebook"></i>

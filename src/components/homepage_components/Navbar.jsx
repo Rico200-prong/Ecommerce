@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className=" bg-[url('/background.png')] text-white px-[300px] py-[30px] font-poppins">
+    <nav className=" bg-[url('/background.png')] text-white px-[25px] lg:px-[50px] 2xl:px-[300px] py-[30px] font-poppins">
       <div className="flex items-center justify-between">
-        <form>
+        <form className="hidden lg:flex">
           <input
             type="search"
             placeholder="Search"
@@ -15,7 +15,7 @@ const Navbar = () => {
         <span className="flex items-center">
           <img src="/Component.png" alt="" />
         </span>
-        <div className="flex items-center gap-[15px]">
+        <div className="hidden lg:flex items-center gap-[15px]">
           <span className="flex items-center gap-[8px]">
             <p className="font-[200] text-[14px]">English</p>
             <i class="bx bx-chevron-down"></i>
@@ -28,9 +28,12 @@ const Navbar = () => {
           <i class="bx  bx-user-circle text-[23px]"></i>
           <p className="border border-solid border-white px-[2px] ">U</p>
         </div>
+        <div className="text-[30px] lg:hidden ">
+          <i class="bx bx-menu"></i>
+        </div>
       </div>
       <div className="flex justify-center my-[50px]">
-        <ul className="flex items-center gap-[50px] ">
+        <ul className="grid grid-cols-3 lg:grid-cols-6 items-center gap-y-[20px]  gap-x-[50px] ">
           <Link to="/Home">Home</Link>
           <Link to="/">Products</Link>
           <Link to="/">Elements</Link>
@@ -39,14 +42,14 @@ const Navbar = () => {
           <Link to="/">Sale</Link>
         </ul>
       </div>
-      <div className="flex items-center">
+      <div className="grid grid-cols-2 lg:flex lg:items-center">
         <div className="flex flex-col text-[16px] gap-[15px] text-[#BBBBBB]">
           <i class="bx bxl-facebook"></i>
           <i class="bx bxl-twitter"></i>
           <i class="bx bxl-youtube"></i>
           <i class="bx bxl-google"></i>
         </div>
-        <div className="mx-[150px]  w-[22%] ">
+        <div className="lg:mx-[150px]   lg:w-[22%] ">
           <h1 className="text-[34px] font-[700] ">
             SimpleWood Chair Collection
           </h1>
@@ -65,12 +68,14 @@ const Navbar = () => {
             <span className="w-[13px] h-[13px] rounded-full bg-[#515151]"></span>
           </div>
         </div>
-        <div className="w-[170px] flex flex-col gap-[20px] ">
-          <img src="/deco.png" alt="" />
-          <img src="/browntable.png" alt="" />
-        </div>
-        <div className="w-[280px] ml-[20px]">
-          <img src="/creamdeco.png" alt="" />
+        <div className="flex items-center">
+          <div className="lg:w-[170px] flex flex-col gap-[20px] ">
+            <img src="/deco.png" alt="" />
+            <img src="/browntable.png" alt="" />
+          </div>
+          <div className="lg:w-[280px] ml-[20px]">
+            <img src="/creamdeco.png" alt="" />
+          </div>
         </div>
       </div>
     </nav>
