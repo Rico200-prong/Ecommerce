@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Checkout_2 from "./pages/Checkout_2";
 import Shopping_Cart from "./pages/Shopping_Cart";
 import Footer from "./components/homepage_components/Footer";
+import Newsletter from "./components/homepage_components/Newsletter";
 
 const App = () => {
   return (

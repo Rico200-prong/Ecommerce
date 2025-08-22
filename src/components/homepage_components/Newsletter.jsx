@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <section className="bg-[#EBEFE5] lg:mx-[50px] 2xl:mx-[300px] my-[50px] px-[25px] lg:px-[50px] py-[30px] fnt">
+    <section className="bg-[#EBEFE5] lg:mx-[50px] 2xl:mx-[300px] my-[50px] px-[25px] lg:px-[50px] py-[30px] ">
       <div>
         <h3 className="text-[21px] text-[#212121] font-[600] mb-[20px] ">
           Join our newsletter for £10 off

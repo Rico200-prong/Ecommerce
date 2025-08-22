@@ -42,14 +42,14 @@ const Navbar = () => {
           <Link to="/">Sale</Link>
         </ul>
       </div>
-      <div className="grid grid-cols-2 lg:flex lg:items-center">
-        <div className="flex flex-col text-[16px] gap-[15px] text-[#BBBBBB]">
+      <div className=" lg:flex lg:items-center   ">
+        <div className="lg:flex flex-col text-[16px] gap-[15px] text-[#BBBBBB] hidden ">
           <i class="bx bxl-facebook"></i>
           <i class="bx bxl-twitter"></i>
           <i class="bx bxl-youtube"></i>
           <i class="bx bxl-google"></i>
         </div>
-        <div className="lg:mx-[150px]   lg:w-[22%] ">
+        <div className="lg:mx-[150px] w-[70%]    lg:w-[22%] ">
           <h1 className="text-[34px] font-[700] ">
             SimpleWood Chair Collection
           </h1>
@@ -68,7 +68,7 @@ const Navbar = () => {
             <span className="w-[13px] h-[13px] rounded-full bg-[#515151]"></span>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center mt-[50px] lg:mt-[0px]">
           <div className="lg:w-[170px] flex flex-col gap-[20px] ">
             <img src="/deco.png" alt="" />
             <img src="/browntable.png" alt="" />
