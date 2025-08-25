@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="flex justify-center my-[50px]">
         <ul className="grid grid-cols-3 lg:grid-cols-6 items-center gap-y-[20px]  gap-x-[50px] ">
           <Link to="/Home">Home</Link>
-          <Link to="/">Products</Link>
+          <Link to="/Productpage">Products</Link>
           <Link to="/">Elements</Link>
           <Link to="/">Pages</Link>
           <Link to="/Catalog">Shop</Link>

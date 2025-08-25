@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#212121] lg:px-[50px] px-[25px] 2xl:px-[300px] py-[50px] text-white">
-      <div className="lg:flex  items-center flex flex-col justify-center lg:justify-between">
+      <div className="  items-center flex lg:flex-row flex-col  justify-center lg:justify-between">
         <div className="flex items-center gap-[30px]">
           <Link to={"/"}>Policy</Link>
           <Link to={"/"}>Terms & Services</Link>

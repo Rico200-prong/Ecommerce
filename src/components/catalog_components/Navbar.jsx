@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="lg:flex justify-center mt-[50px] hidden">
         <ul className="flex items-center gap-[50px] ">
           <Link to="/Home">Home</Link>
-          <Link to="/">Products</Link>
+          <Link to="/Productpage">Products</Link>
           <Link to="/">Elements</Link>
           <Link to="/">Pages</Link>
           <Link to="/Catalog">Shop</Link>
