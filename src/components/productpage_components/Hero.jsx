@@ -8,15 +8,30 @@ const Hero = () => {
         <i class="bx bx-chevron-right text-[20px] mx-[6px]"></i>
         <small>New Luma Yoga Collection</small>
       </div>
-      <div className="flex items-start justify-between ">
-        <div className="flex items-center  bg-[#F0F0F0] py-[30px]  ">
-          <button className="text-[#828282] bg-white rounded-full flex items-center p-[10px] ml-[30px] ">
-            <i class="bx bx-left-arrow-alt text-[30px]"></i>
-          </button>
-          <img src="/white_chair.png" alt="chair" className="w-[438px]" />
-          <button className="text-[#828282] bg-white rounded-full flex items-center p-[10px] mr-[30px] ">
-            <i class="bx bx-right-arrow-alt text-[30px]"></i>
-          </button>
+      <div className="flex flex-col lg:flex-row items-start justify-between ">
+        <div>
+          <div className="flex items-center  bg-[#F0F0F0] py-[30px]  ">
+            <button className="text-[#828282] bg-white rounded-full flex items-center p-[10px] lg:ml-[30px] ">
+              <i class="bx bx-left-arrow-alt text-[30px]"></i>
+            </button>
+            <img
+              src="/white_chair.png"
+              alt="chair"
+              className="lg:w-[438px] w-[250px]"
+            />
+            <button className="text-[#828282] bg-white rounded-full flex items-center p-[10px] lg:mr-[30px] ">
+              <i class="bx bx-right-arrow-alt text-[30px]"></i>
+            </button>
+          </div>
+          <div className="flex items-center gap-x-[10px] mt-[10px]">
+            <img src="/white_chair.png" alt="" className="w-[88px] h-[110px]" />
+            <img
+              src="/white_dinning.png"
+              alt=""
+              className="w-[88px] h-[110px]"
+            />
+            <img src="/kitchen.png" alt="" className="w-[88px] h-[110px]" />
+          </div>
         </div>
         <div className=" ">
           <h1 className="text-[40px] font-[300] text-[#212121] leading-[120%] w-[70%] mb-[15px]">
@@ -65,14 +80,14 @@ const Hero = () => {
           <div className="py-[15px] px-[40px] bg-[#7DB800] font-[700] text-white w-max">
             <button>Add To Cart</button>
           </div>
-          <div className="flex items-center mt-[30px]">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-y-[10px] mt-[30px]">
             <div className="text-[#828282] flex items-center">
               <i class="bx bxs-heart text-[24px]"></i>
               <p className="font-[500] text-[14px] ml-[5px]">
                 ADD TO WISH LIST
               </p>
             </div>
-            <div className="text-[#828282] flex items-center mx-[40px]">
+            <div className="text-[#828282] flex items-center lg:mx-[40px]">
               <i class="bx bxs-bar-chart-alt-2 text-[24px]"></i>
               <p className="font-[500] text-[14px] ml-[5px]">ADD TO COMPARE</p>
             </div>
@@ -82,11 +97,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex items-center gap-x-[10px] mt-[10px]">
-        <img src="/white_chair.png" alt="" className="w-[88px] h-[110px]" />
-        <img src="/white_dinning.png" alt="" className="w-[88px] h-[110px]" />
-        <img src="/kitchen.png" alt="" className="w-[88px] h-[110px]" />
       </div>
     </section>
   );

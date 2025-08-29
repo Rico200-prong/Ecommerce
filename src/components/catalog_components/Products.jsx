@@ -169,7 +169,7 @@ const Products = () => {
             <i class="bx bxs-up-arrow-alt text-[24px] text-[#212121]"></i>
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-3 mt-[20px] ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mt-[20px] ">
           {productData.map(
             ({
               id,
@@ -184,7 +184,7 @@ const Products = () => {
                   <img
                     src={productImg}
                     alt={productName}
-                    className="h-[350px] w-[288px]  px-[30px] py-[50px] bg-[#F0F0F0] "
+                    className="h-[350px] w-[100%] lg:w-[288px]  px-[30px] py-[50px] bg-[#F0F0F0] "
                   />
                 </div>
                 <div>

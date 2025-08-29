@@ -6,7 +6,8 @@ const Navbar = () => {
     <nav className="px-[25px] lg:px-[50px] 2xl:px-[300px] py-[30px] text-white lg:bg-[#212121] ">
       <div className="flex items-center justify-between">
         <div className="text-[34px] lg:hidden text-[#212121]">
-          <i class="bx bx-menu-alt-left"></i>
+          <i id="toggle" class="bx bx-menu-alt-left"></i>
+          <i id="close" class="bx bx-x hidden"></i>
         </div>
         <form className="hidden lg:flex">
           <input
