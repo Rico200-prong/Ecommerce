@@ -17,13 +17,17 @@ import Newsletter from "./components/homepage_components/Newsletter";
 const App = () => {
   return (
     <div className="overflow-x-hidden font-mont scroll-smooth">
+      {/* Remember you added the body class poppins to body, now you're adding "font-mont" here ? Why though? */}
       <Router>
         <Routes>
-          <Route path="/" element={<Homepage />} />
           <Route path="/Catalog" element={<Catalog />} />
           <Route path="/Productpage" element={<Productpage />} />
+          {/* What is the difference between "Home" and "Homepage"? */}
+          <Route path="/" element={<Homepage />} />
+          {/* Currently it seems the "Home" component doesn't even have any updates */}
           <Route path="/Home" element={<Home />} />
           <Route path="/Product_page2" element={<Product_page2 />} />
+          {/* // You might want to call this pages something more concise than "Product_page*" */}
           <Route path="/Product_page3" element={<Product_page3 />} />
           <Route path="/Product_page4" element={<Product_page4 />} />
           <Route path="/Product_page5" element={<Product_page5 />} />
